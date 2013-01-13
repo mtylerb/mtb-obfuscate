@@ -27,7 +27,7 @@ To use, please follow these steps:
 To use, simply $obfuscate variable to refer to the plugin's object:
 
 1. __Required:__ $obfuscate->setText('Example Link'); Use this to set the text of link.  This also sets the title.
-2. __Required:__ $obfuscate->setEmail('admin@get-heard.ca'); Use this to set the desired email address to obfuscate.
+2. __Required:__ $obfuscate->setEmail('john@doe.net'); Use this to set the desired email address to obfuscate.
 3. __Optional:__ $obfuscate->setType('text'); Use this to change between text and image.  The plugin will default to whichever the last usage is or text if this is the first usage.  Valid options are "text" or "image".
 4. __Optional:__ $obfuscate->setClass('cssClass'); Use this to set the class element in the link for CSS purposes.  Please note that if you decide to use image type, this will append "Image" to the desired class name.  E.g. "cssClassImage".
 5. __Optional:__ $obfuscate->setImageBG('#000000'); Use this to set the image's background colour.  Default is #000000.
