@@ -10,7 +10,7 @@ I was worried about placing my email addresses on the web without some sort of o
 
 The process in obfuscation is a mix of PHP and JavaScript.  PHP is used to disassemble the email address and modify it into a random string designed to look like a simple http:// weblink.  PHP uses a random string of characters to derive a math sequence that JavaScript can use for the reassembly of a working email address.  For SPAMbots, your email link will look like:
 
-<a href="https://www.nra-xllrk.vg/hqtdd" rel="nofollow" onclick="javascript:YqeDFLjJI45pWnwSd(this);" onmouseover="javascript:TQxr7i0ZlK6(this);" onmouseout="javascript:TQxr7i0ZlK6(this);" title="Tyler Beckett">Tyler Beckett</a>
+    <a href="https://www.nra-xllrk.vg/hqtdd" rel="nofollow" onclick="javascript:YqeDFLjJI45pWnwSd(this);" onmouseover="javascript:TQxr7i0ZlK6(this);" onmouseout="javascript:TQxr7i0ZlK6(this);" title="Tyler Beckett">Tyler Beckett</a>
 
 I went a bit further, though, and made PHP randomize the JavaScript Variable and Function names.  In the above example, "YqeDFLjJI45pWnwSd" is a function name.  The only time your email address is actually displayed is when you interact with the link.  Hovering your mouse over the link displays your email address, but does not modify the page source.  Clicking on the link activates your Operating System's mail link behavior (perhaps opening Mozilla Thunderbird or Microsoft Outlook) and modifies the page source to show the actual email address until such time as the page is refreshed.  Once refreshed, the JavaScript is re-randomized and the link is encoded again into an http:// weblink.
 
@@ -36,16 +36,16 @@ To use, simply $obfuscate variable to refer to the plugin's object:
 
 ## Example:
 
-<?php
-	$obfuscate->setType('text');
-	$obfuscate->setText('Tyler Beckett');
-	$obfuscate->setEmail('john@doe.net');
-	$obfuscate->linkOut();
-?>
+    <?php
+    	$obfuscate->setType('text');
+    	$obfuscate->setText('Tyler Beckett');
+    	$obfuscate->setEmail('john@doe.net');
+    	$obfuscate->linkOut();
+    ?>
 
 Would result in something similar to:
 
-<a href="http://www.zrs.bxo/frvm" rel="nofollow" onclick="javascript:aunVfvqcfBBcXgMGd4Qdn(this);" onmouseover="javascript:zmbrqKFBHrMvPom(this);" onmouseout="javascript:zmbrqKFBHrMvPom(this);" title="Tyler Beckett">Tyler Beckett</a>
+    <a href="http://www.zrs.bxo/frvm" rel="nofollow" onclick="javascript:aunVfvqcfBBcXgMGd4Qdn(this);" onmouseover="javascript:zmbrqKFBHrMvPom(this);" onmouseout="javascript:zmbrqKFBHrMvPom(this);" title="Tyler Beckett">Tyler Beckett</a>
 
 ## Please Note:
 The image function is still somewhat rudimentary.  It creates a PNG image using a Tahoma.ttf font file.  I have had issues in the past with sizes and causing the text to not be centered or to drift off the sides of the image.  As of 1.0.0 I haven't fixed this.
