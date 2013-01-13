@@ -32,7 +32,7 @@ Plugin::setInfos(array(
     'id'			=> 'mtb-obfuscate',
     'title'			=> __('MTB Email Obfuscator'), 
     'description'	=> __('Allows you to obfuscate any plain text email address to reduce the likelihood of SPAM.'), 
-    'version'		=> '1.0.1',
+    'version'		=> '1.0.2',
 	'license'		=> 'MIT/GPL',
     'website'		=> 'http://www.tbeckett.net/',
 	'author'		=> 'Tyler Beckett')

@@ -25,7 +25,7 @@ To use, please follow these steps:
 
 ## Use:
 To use, simply $obfuscate variable to refer to the plugin's object:
-<?php $obfuscate->setType('text'); $obfuscate->setText('Tyler Beckett'); $obfuscate->setEmail('admin@get-heard.ca'); $obfuscate->linkOut(); ?>
+
 1. __Required:__ $obfuscate->setText('Example Link'); Use this to set the text of link.  This also sets the title.
 2. __Required:__ $obfuscate->setEmail('admin@get-heard.ca'); Use this to set the desired email address to obfuscate.
 3. __Optional:__ $obfuscate->setType('text'); Use this to change between text and image.  The plugin will default to whichever the last usage is or text if this is the first usage.  Valid options are "text" or "image".
