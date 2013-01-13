@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Security measure for Wolf 0.7.0+
  */
@@ -20,7 +20,7 @@ else
 }
 
  /**
- * MTB's Email Obfuscator Plugin for Wolf CMS <http://www.tbeckett.net/articles/plugins/adv-find.xhtml>
+ * MTB's Email Obfuscator Plugin for Wolf CMS <https://www.tbeckett.net/articles/plugins/mtb-obfuscate.xhtml>
  *
  * Copyright (C) 2011 - 2013 Tyler Beckett <tyler@tbeckett.net>
  * 
@@ -32,10 +32,12 @@ Plugin::setInfos(array(
     'id'			=> 'mtb-obfuscate',
     'title'			=> __('MTB Email Obfuscator'), 
     'description'	=> __('Allows you to obfuscate any plain text email address to reduce the likelihood of SPAM.'), 
-    'version'		=> '1.0.3',
+    'version'		=> '1.0.4',
 	'license'		=> 'MIT/GPL',
     'website'		=> 'http://www.tbeckett.net/',
-	'author'		=> 'Tyler Beckett')
+    'update_url'  => 'https://www.tbeckett.net/wpv.xhtml',
+	'author'		=> 'Tyler Beckett'
+	)
 );
 
 require_once('obfuscate.php');
